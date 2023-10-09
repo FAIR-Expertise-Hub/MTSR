@@ -1,0 +1,49 @@
+@prefix : <http://purl.org/nanopub/temp/fair-community/2f6aaf3f-86c7-4731-9383-1ee438322cad/a915135a-8a59-48f7-8bee-16d393534f55#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  # identifier: LGBTQVoc
+  # subject: :LGBTQVoc
+  # name: LGBTQ+ Linked Open Vocabulary Community
+  # orcid: XXXXXXXXX
+
+  :LGBTQVoc a fip:FAIR-Implementation-Community .
+  :LGBTQVoc rdfs:label "LGBTQ+ Linked Open Vocabulary Community" .
+  :LGBTQVoc rdfs:comment "The LGBTQ+ Linked Open Vocabulary Community consists of researcher, librarians, linguistics experts that are contributing to the development and use of vocabularies such as Homosaurus, QLIT, etc. The community is centered around the Homosaurus project. " .
+  :LGBTQVoc rdfs:seeAlso <https://homosaurus.org/> .
+  :LGBTQVoc fip:has-research-domain <http://aims.fao.org/aos/agrovoc/c_1335455465014> .
+  # Other research domains
+  :LGBTQVoc fip:has-research-domain <http://purl.obolibrary.org/obo/NCIT_C17141> .
+  :LGBTQVoc fip:has-research-domain <http://purl.obolibrary.org/obo/NCIT_C54625> .
+  :LGBTQVoc fip:has-research-domain <http://purl.obolibrary.org/obo/NCIT_C16478> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:XXXXXXXXXX .
+}
+
+:pubinfo {
+  : dct:created "2023-07-07T09:32:32Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/2f6aaf3f-86c7-4731-9383-1ee438322cad> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+  : npx:introduces :LGBTQVoc .
+}

@@ -1,0 +1,48 @@
+@prefix : <http://purl.org/nanopub/temp/fair-community/dc1e0904-4b1f-43f2-a557-3e8e85b8c370/e8bb9ebb-66c2-4aa7-bb76-aae385799012#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  # identifier: MCAL-NL
+  # subject: <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL>
+  # name: MCAL scholars - Media Content Analysis Lab scholars in the Netherlands
+  # orcid: XXXXXXXXX
+
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> a fip:FAIR-Implementation-Community .
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> rdfs:label "MCAL scholars - Media Content Analysis Lab scholars in the Netherlands" .
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> rdfs:comment "The Media Content Analysis Lab (MCAL) is funded by ODISSEI and it consists of scholars in the field of communication sciences and media content, largely based at the Amsterdam School of Communication Research (ASCoR) at the University of Amsterdam and at the Department of Social Sciences at Wageningen University. The MCAL seeks to tackle the major challenge of digital text analysis whereby copyright and GDPR restrictions make it very hard to share media content data by providing a workbench for researchers where they can share data and analyses with strict rights management, without the need to read or export the data themselves." .
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> rdfs:seeAlso <https://odissei-data.nl/en/media-content-analysis-lab/> .
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> dct:isPartOf <http://purl.org/np/RA1St3Ux-NgbOaSeSJLh2-CRYUv07HeEGBPwjOoi_gWeE#ODISSEI> .
+  <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> fip:has-research-domain <http://www.fairsharing.org/ontology/subject/SRAO_0000054> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:XXXXXXXXXX .
+}
+
+:pubinfo {
+  : dct:created "2023-07-11T10:02:00Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/dc1e0904-4b1f-43f2-a557-3e8e85b8c370> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+  : npx:introduces <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo#MCAL-NL> .
+
+  : npx:supersedes <http://purl.org/np/RAMrZ9OM8QJpE8W5d1OwHoNuUAOkD5jiwKAwd_m5eDqeo> ;
+}

@@ -1,0 +1,45 @@
+@prefix : <http://purl.org/nanopub/temp/fair-community/0a2e46a9-900a-4fa0-a632-d49920ca36bd/52582421-877e-4342-a3c2-31ecff90b9a3#> .
+@prefix np: <http://www.nanopub.org/nschema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix fip: <https://w3id.org/fair/fip/terms/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix npx: <http://purl.org/nanopub/x/> .
+
+
+:Head {
+  : a np:Nanopublication ;
+    np:hasAssertion :assertion ;
+    np:hasProvenance :provenance ;
+    np:hasPublicationInfo :pubinfo .
+}
+
+:assertion {
+  # identifier: AUSSI-ESS
+  # subject: :AUSSI-ESS
+  # name: Australian Social Survey International – European Social Survey (AUSSI-ESS)
+  # orcid: XXXXXXXXX
+
+  :AUSSI-ESS a fip:FAIR-Implementation-Community .
+  :AUSSI-ESS rdfs:label "Australian Social Survey International – European Social Survey (AUSSI-ESS)" .
+  :AUSSI-ESS rdfs:comment "The Australian National University (ANU) conducted the ESS in an Australian context, under the title of the Australian Social Survey International – ESS (AUSSI-ESS). The purpose of the Australian study was to conduct a national study that enabled cross-continent comparisons to European countries that participate, to better understand the similarities and differences between countries. The fieldwork methodology for AUSSI-ESS was completed using self-completion of surveys via the web. This was different to that traditionally used in the ESS, which had used face-to-face survey methods almost exclusively through Wave 9." .
+  :AUSSI-ESS rdfs:seeAlso <https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/HMPLAT> .
+  :AUSSI-ESS fip:has-research-domain <http://purl.obolibrary.org/obo/NCIT_C17141> .
+
+}
+
+:provenance {
+  :assertion dct:creator orcid:XXXXXXXXX .
+}
+
+:pubinfo {
+  : dct:created "2023-06-07T15:03:53Z"^^xsd:dateTime ;
+    dct:creator <https://fip-wizard.ds-wizard.org> ;
+    prov:wasDerivedFrom <https://w3id.org/fip/wizard/0a2e46a9-900a-4fa0-a632-d49920ca36bd> ;
+    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> .
+  : npx:introduces :AUSSI-ESS .
+}
