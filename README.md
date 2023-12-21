@@ -6,7 +6,7 @@ This is the main repository of code for our paper
 
 --
 
-The repository consists of folder
+The repository consists of the following folders.
 
 `/FICs` consists of files for FAIR Implementation Communities.
 `/FIPs` consists of files for FAIR Implementation Profiles of these communities.
