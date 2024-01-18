@@ -4,6 +4,9 @@
 This is the main repository of code for our paper
 **FAIR Implementation Profiles for Social Science**.
 
+See the latest version at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10418880.svg)](https://doi.org/10.5281/zenodo.10418880)
+
+
 --
 
 The repository consists of the following folders.
